@@ -9,7 +9,10 @@
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;precision: mediump;colorManagement: true;physicallyCorrectLights: true;">
-
+    
+        <a-entity light="type: point; intensity: 0.75; distance: 50; decay: 2"
+          position="0 10 10"></a-entity>
+            
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/YvesBB/models/main/gorilla1.glb"></a-asset-item>
         </a-assets>
